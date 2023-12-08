@@ -1,0 +1,33 @@
+{
+  "background": {
+    "service_worker": "extensions/background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["extensions/content.js"],
+      "matches": ["*://uk.indeed.com/*", "*://www.linkedin.com/*"]
+    }
+  ],
+  "description": "This extension checks if a job requires H1B sponsorship or UK Skilled Worker Visa.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "96": "icons/icon96.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkZ0GzJ5upoKSFKkt0b3du+LkhczYjx41EsdhCeMBnmDRXZQxtbNYRdaaArJ+h9WEQ6Kna8zGVfs/qnTK8M5QNitzE571ua3Dbe7Fv5OZCc5iY+875Rt2KuMfgBoPUz3NelWX74Z9d/dgS20d2VkMj2Z3O+UURXl0mMk66LoK4RRk5vuypE8/UsUxo2nPc6BdwqLtQBFx2JDqzlcYecqQJYRagZGyRf5eUR45+jMEOvUyxjpjVKn/U3LP13fRU4CZDmWHb4DrUe7rfyeqie2ro7wl6fH9ckp0jYDqdSy8VK9INjETym7ebfNEIlZPBBwPEMSsFx17s8LeKWqcp6CTZwIDAQAB",
+  "manifest_version": 3,
+  "name": "LinkedIn US H1B & UK Skilled Worker Checker",
+  "permissions": [
+    "activeTab",
+    "*://www.linkedin.com/*",
+    "tabs"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "1.0.6",
+  "web_accessible_resources": [
+    {
+      "matches": ["*://www.linkedin.com/*", "*://uk.indeed.com/*"],
+      "resources": ["extensions/data/ukvisa.json", "check.png", "x.png"]
+    }
+  ]
+}
