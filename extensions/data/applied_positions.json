@@ -1,0 +1,28 @@
+{
+    "applications": [
+        {
+            "companyName": "SCC",
+            "positionApplied": "TECHNICAL SUPPORT - NETWORKS & SECURITY"
+        },
+        {
+            "companyName": "Company B",
+            "positionApplied": "Data Analyst"
+        },
+        {
+            "companyName": "rocky company",
+            "positionApplied": "software"
+        },
+        {
+            "companyName": "Outdefine",
+            "positionApplied": "Python Developer"
+        },
+        {
+            "companyName": "DAAW",
+            "positionApplied": "DWAD"
+        },
+        {
+            "companyName": "OUTDEFINE",
+            "positionApplied": "PYTHON DEVELOPER"
+        }
+    ]
+}
